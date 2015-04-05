@@ -1,0 +1,62 @@
+%\documentclass[twoside]{article}
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+
+\linespread{1.05}
+\usepackage{microtype}
+
+% Margins
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry}
+% Two-column layout
+\usepackage{multicol}
+% Custom captions
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption}
+% Horizontal rules for tables
+\usepackage{booktabs}
+% Table & figure positioning.
+\usepackage{float}
+% Hyperlinks
+\usepackage[colorlinks,citecolor=blue]{hyperref}
+% Source code
+\usepackage{listings}
+
+% Abstract customization
+\usepackage{abstract}
+% Bold "Abstract"
+\renewcommand{\abstractnamefont}{\normalfont\bfseries}
+% Italic abstract
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape}
+
+% Custom titles
+\usepackage{titlesec}
+% Custom section titles
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{}
+% Custom subsection titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{}
+
+% Document title
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont
+    \textbf{DBpedia as a timeline}}
+
+% Document authors
+\author{
+\begin{tabular}{l c r}
+    Alexander Berntsen\\
+    \href{mailto:alexander@plaimi.net}{alexander@plaimi.net}
+\end{tabular}
+}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+\noindent \input{txt/abstract}
+\end{abstract}
+\tableofcontents
+\begin{multicols}{2}
+    \input{txt/main}
+    \bibliography{paper}
+    \bibliographystyle{unsrt}
+\end{multicols}
+\end{document}
