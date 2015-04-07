@@ -1,27 +1,5 @@
-We may scrape all of DBpedia, and record all of the entries with time metadata 
-in tempuhs. This data may in turn be visualised using mytimelines.org.
 
-In fact, DBpedia is already scraped and put into tempuhs, with metadata 
-describing and cataloguing the entries. The cataloguing is important for being
-able to filter the immense amounts of data.
 
-Given a perfect universe with no computational bottlenecks, tempuhs is already 
-fit for fight. Notwithstanding, due to the quantity of entries contained 
-within DBpedia, a pragmatic timeline will require some improvements in tempuhs 
-in order to serve it quickly enough. It needs to be partially served. It 
-should furthermore in all likelihood be cached in a clever way. For this it 
-might be fruitful to introduce the concept of read-only timespans to tempuhs.
-
-As for mytimelines.org, it really is not up to par to handle this amount of 
-data, or anything anywhere near this right now. timeline.js simply won't cut 
-it. It is optimised for 20-30 entries\cite{timelinejsfaq} -- DBpedia will be 
-several millions of entries. mytimelines.org in its current state will not be 
-able to present the required amount of data. Perchance it will not even be 
-able to \textbf{receive} the required amount of data.
-
-The envisioned mytimelines.org user experience as presented in 
-January\cite{timelinesjanuary} would however be more than sufficient. It is 
-imperative that mytimelines.org is able to handle larger datasets.
 
 \begin{figure}[H]
   \centering

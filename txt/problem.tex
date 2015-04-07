@@ -1,10 +1,21 @@
-DBpedia is an example of linked data, where structured data has been extracted 
-from Wikipedia. This data may be semantically queried, and as such contains 
-Wikipedia entries with metadata\cite{bizer2009dbpedia}.
+In fact, DBpedia is already scraped and put into tempuhs, with metadata 
+describing and cataloguing the entries. The cataloguing is important for being
+able to filter the immense amounts of data.
 
-DBpedia is designed for semantic querying of data, not presenting data. If 
-permitted to beg the question: data becomes more useful if used. So let's use 
-it.
+Given a perfect universe with no computational bottlenecks, tempuhs is already 
+fit for fight. Notwithstanding, due to the quantity of entries contained 
+within DBpedia, a pragmatic timeline will require some improvements in tempuhs 
+in order to serve it quickly enough. It needs to be partially served. It 
+should furthermore in all likelihood be cached in a clever way. For this it 
+might be fruitful to introduce the concept of read-only timespans to tempuhs.
 
-Some of the entries have time-related metadata. This data might be more 
-absorbing if presented as an interactive visualisation.
+As for mytimelines.org, it really is not up to par to handle this amount of 
+data, or anything anywhere near this right now. timeline.js simply won't cut 
+it. It is optimised for 20-30 entries\cite{timelinejsfaq} -- DBpedia will be 
+several millions of entries. mytimelines.org in its current state will not be 
+able to present the required amount of data. Perchance it will not even be 
+able to \textbf{receive} the required amount of data.
+
+The envisioned mytimelines.org user experience as presented in 
+January\cite{timelinesjanuary} would however be more than sufficient. It is 
+imperative that mytimelines.org is able to handle larger datasets.
