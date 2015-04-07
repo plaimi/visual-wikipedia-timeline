@@ -7,6 +7,18 @@
 \linespread{1.05}
 \usepackage{microtype}
 
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{environ}
+% Environment to scale things
+\NewEnviron{scale}[1]{%
+  \begin{tikzpicture}
+    \node[scale=#1]{%
+      \BODY
+    };
+  \end{tikzpicture}
+}
+
 % Margins
 \usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry}
 % Two-column layout
